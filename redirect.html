@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Redirect</title>
+    <script>
+        if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+            window.location.href = "https://apps.apple.com/us/app/fireground-ar/id6477443982";
+        } else if (navigator.userAgent.match(/Android/i)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.AVimmerse.GMFSM_AR";
+        } else {
+            // Redirect to a page indicating the app is not available for their device
+            window.location.href = "https://www.bbc.com";
+        }
+    </script>
+</head>
+<body>
+    <!-- Optional: Add content for non-JavaScript users -->
+    <h1>Redirecting...</h1>
+</body>
+</html>
